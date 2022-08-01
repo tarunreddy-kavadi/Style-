@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Edu SA Beginner', cursive;
+   
+}
+body{
+    font-family: sans-serif
+}
+i{
+   cursor: pointer; 
+}
+a{
+    text-decoration: none;
+   color:white;
+   
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:f8ad9d;
+    color: f8ad9d;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    align-items: center;  
+}
+.cart{
+    background-color: f8ad9d;
+    position:relative;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+
+}
+.cartAmount{
+    position: absolute;
+    top: -2px;
+    right:2px;
+    font-size:15px;
+    background-color:white;
+    color:black;
+    padding: 1px;
+border-radius: 5px;   
+}
+
+/**
+* shop items styles are here
+**/
+.shop {
+    display : grid;
+    grid-template-columns: repeat(4, 223px);
+    gap :30px;
+    justify-content: center; 
+    content: normal;
+}
+@media (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+
+    }
+}
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+
+    }
+}
+.item {
+    border: 2px ;
+    border-radius: 4px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:10px;
+}
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap : 8px;
+    font-size: 16px;
+}
+.bi-plus-lg{
+    color:green;
+}
+.bi-dash-lg{
+    color: red;
+}
+
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.HomeBtn,
+.checkout,
+.removeAll{
+background: #f8ad9d;
+color: white;
+padding: 6px;
+border:none;
+border-radius:3px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.bi-x-lg{
+    color:red;
+    font-weight: bold;
+}
+
+/* style rules for shopping cart */
+.shopping-cart{
+    display: grid;
+    grid-template-columns:repeat(1, 320px) ;
+    justify-content : center;
+    vertical-align: middle;
+    gap: 15px;
+}
+
+.cart-item{
+    text-align: center;
+    display: block;
+   
+}
+.title-price-x{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.cart-item-price{
+    background-color: #f8ad9d;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+.adding-price{
+   position: fixed;
+   top: 20px;
+}
